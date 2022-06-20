@@ -8,7 +8,7 @@ url = "http://www.boredapi.com/api/activity"
 
 def test_nr_one():
     response = requests.get(url)
-    assert response.status_code == 200
+    assert response.status_code != 206
     assert response.json() != None
 # response = requests.get(url)
 # print(response)
